@@ -26,3 +26,10 @@ function setCardType(type) {
 setCardType('mastercard');
 
 globalThis.setCardType = setCardType;
+
+// security code
+const securityCode = document.getElementById('security-code');
+const securityCodePattern = {
+  mask: '000',
+};
+const securityCodeMasked = IMask(securityCode, securityCodePattern);
